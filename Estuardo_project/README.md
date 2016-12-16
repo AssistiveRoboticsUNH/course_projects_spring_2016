@@ -7,6 +7,7 @@ This repository contains the nodes created to implement a guide robot for the vi
 ##DEPENDENCIES
 
 The following packages are needed to run the GROVI's nodes:
+
 	- actionlib
 	- ar_track_alvar
 	- face_recognition
@@ -23,6 +24,7 @@ The following packages are needed to run the GROVI's nodes:
 ##STARTUP
 
 The following nodes need to be executed in order to have GROVI up and running using a turtlebot:
+
 	- turtlebot_bringup: using minimal launch file
 	- turtlebot_navigation: using amcl_demo launch file and indicating the map to be used
 	- usb_cam: using usb_cam_face_recog launch file
@@ -48,6 +50,7 @@ The following nodes need to be executed in order to have GROVI up and running us
 ##TO DO
 
 The following are enhancements that could be do to this project
+
 	- Create a node that handles the messages sent to sound_play_node to avoid repeated messages and stop messages from interrupting each other.
 	- guide_ar_localization:
 		- Map from ar tag ids to location names using a configuration file

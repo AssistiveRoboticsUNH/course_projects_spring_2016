@@ -1,0 +1,8 @@
+<launch>
+
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py">
+    <param name="lm" value="/home/unh_robotics/catkin_ws/src/guide_voice_commands/speech/TAR4422/4422.lm"/>
+    <param name="dict" value="/home/unh_robotics/catkin_ws/src/guide_voice_commands/speech/TAR4422/4422.dic"/>
+  </node>
+
+</launch>

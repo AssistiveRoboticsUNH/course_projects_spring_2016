@@ -1,0 +1,97 @@
+Language model created by QuickLM on Wed Nov 30 21:42:08 EST 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 15 sentences and 18 words
+
+\data\
+ngram 1=18
+ngram 2=31
+ngram 3=25
+
+\1-grams:
+-0.8653 </s> -0.3010
+-0.8653 <s> -0.2374
+-2.0414 EIGHT -0.2374
+-2.0414 FEEDBACK -0.2374
+-2.0414 FIVE -0.2374
+-2.0414 FOUR -0.2374
+-2.0414 GO -0.2374
+-2.0414 GROVI -0.2374
+-1.0414 LOCATION -0.2596
+-2.0414 NAVIGATE -0.2374
+-2.0414 NINE -0.2374
+-2.0414 ONE -0.2374
+-2.0414 SEVEN -0.2374
+-2.0414 SIX -0.2374
+-2.0414 STOP -0.2374
+-2.0414 TEN -0.2374
+-2.0414 THREE -0.2374
+-2.0414 TWO -0.2374
+
+\2-grams:
+-1.4771 <s> FEEDBACK 0.0000
+-1.4771 <s> GO 0.0000
+-1.4771 <s> GROVI 0.0000
+-0.4771 <s> LOCATION 0.0000
+-1.4771 <s> NAVIGATE 0.0000
+-1.4771 <s> STOP 0.0000
+-0.3010 EIGHT </s> -0.3010
+-0.3010 FEEDBACK </s> -0.3010
+-0.3010 FIVE </s> -0.3010
+-0.3010 FOUR </s> -0.3010
+-0.3010 GO </s> -0.3010
+-0.3010 GROVI </s> -0.3010
+-1.3010 LOCATION EIGHT 0.0000
+-1.3010 LOCATION FIVE 0.0000
+-1.3010 LOCATION FOUR 0.0000
+-1.3010 LOCATION NINE 0.0000
+-1.3010 LOCATION ONE 0.0000
+-1.3010 LOCATION SEVEN 0.0000
+-1.3010 LOCATION SIX 0.0000
+-1.3010 LOCATION TEN 0.0000
+-1.3010 LOCATION THREE 0.0000
+-1.3010 LOCATION TWO 0.0000
+-0.3010 NAVIGATE </s> -0.3010
+-0.3010 NINE </s> -0.3010
+-0.3010 ONE </s> -0.3010
+-0.3010 SEVEN </s> -0.3010
+-0.3010 SIX </s> -0.3010
+-0.3010 STOP </s> -0.3010
+-0.3010 TEN </s> -0.3010
+-0.3010 THREE </s> -0.3010
+-0.3010 TWO </s> -0.3010
+
+\3-grams:
+-0.3010 <s> FEEDBACK </s>
+-0.3010 <s> GO </s>
+-0.3010 <s> GROVI </s>
+-1.3010 <s> LOCATION EIGHT
+-1.3010 <s> LOCATION FIVE
+-1.3010 <s> LOCATION FOUR
+-1.3010 <s> LOCATION NINE
+-1.3010 <s> LOCATION ONE
+-1.3010 <s> LOCATION SEVEN
+-1.3010 <s> LOCATION SIX
+-1.3010 <s> LOCATION TEN
+-1.3010 <s> LOCATION THREE
+-1.3010 <s> LOCATION TWO
+-0.3010 <s> NAVIGATE </s>
+-0.3010 <s> STOP </s>
+-0.3010 LOCATION EIGHT </s>
+-0.3010 LOCATION FIVE </s>
+-0.3010 LOCATION FOUR </s>
+-0.3010 LOCATION NINE </s>
+-0.3010 LOCATION ONE </s>
+-0.3010 LOCATION SEVEN </s>
+-0.3010 LOCATION SIX </s>
+-0.3010 LOCATION TEN </s>
+-0.3010 LOCATION THREE </s>
+-0.3010 LOCATION TWO </s>
+
+\end\
