@@ -11,11 +11,13 @@ std::atomic<bool> active;
 
 int currentGoal = 4;
 
+/*Identifies the current goal*/
 void goalParser(const face_recognition::FaceRecognitionActionGoalConstPtr& msg) {
 	currentGoal = msg->goal.order_id;
 	ROS_INFO("Current goal: [%i]", msg->goal.order_id);
 }
 
+/*Identifies the feedback sent by the face_recognition node*/
 void feedbackParser(const face_recognition::FaceRecognitionActionFeedbackConstPtr& msg) {
 	if (currentGoal < 2) {
 		if (matchCounter == 3) {
@@ -28,6 +30,7 @@ void feedbackParser(const face_recognition::FaceRecognitionActionFeedbackConstPt
 	}
 }
 
+/*Timer that controls the feedback frecuency*/
 void resetFaceRecogTimer()
 {
     active = true; 

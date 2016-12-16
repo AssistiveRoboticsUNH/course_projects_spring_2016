@@ -10,6 +10,9 @@
 std::atomic<int> matchCounter;
 std::atomic<bool> active; 
 
+/* Maps an ar tag id with a location name
+	ToDo: move this information to a configuration file
+*/
 std::string getMarkerName(int id) {
 	switch(id) {
 		case 1001: return "point alfa";
@@ -26,6 +29,7 @@ std::string getMarkerName(int id) {
 	return "an unknown location";
 }
 
+/*Identifies the information sent by the ar_track_alvar node*/
 void markerParser(const visualization_msgs::MarkerConstPtr& msg) {
 	int id = msg->id;
 	if (id < 1011 && id > 1000) {
@@ -40,6 +44,7 @@ void markerParser(const visualization_msgs::MarkerConstPtr& msg) {
 	}
 }
 
+/*Timer that controls feedback frecuency*/
 void resetFaceRecogTimer()
 {
     active = true; 

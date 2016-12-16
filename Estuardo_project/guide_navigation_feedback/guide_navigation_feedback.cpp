@@ -17,6 +17,7 @@ std::atomic<bool> active;
 std::atomic<int> outputRequired;
 sound_play::SoundClient* speech;
 
+/*Identifies if the robot will turn based on the direction of the vectors created from the parameters*/
 int getTurnId(geometry_msgs::Point p0, geometry_msgs::Point p1, geometry_msgs::Point p3, geometry_msgs::Point p4) {
 	int turnId = -1;
 	if (p4.x != 0 && p4.y != 0) {
@@ -39,6 +40,7 @@ int getTurnId(geometry_msgs::Point p0, geometry_msgs::Point p1, geometry_msgs::P
 	return turnId;	
 }
 
+/*Idenitifies if the robot is turning left or right*/
 void planParser(const nav_msgs::PathConstPtr& msg) {
 	try {
 		if (outputRequired == 1) {
@@ -68,6 +70,7 @@ void planParser(const nav_msgs::PathConstPtr& msg) {
 	}
 }
 
+/*Timer that controls the feedback frecuency*/
 void resetFeedbackTimer()
 {
     active = true; 
