@@ -6,3 +6,4 @@ At the root of each project have a README containing any information you think i
 to run your projects (libraries needed, paths used etc). Skip large files (many images, large rosbags etc).
 
 - [Wearable System for Fall Prevention](https://github.com/AssistiveRoboticsUNH/threespace_ros)
+- [GROVI: A Guide Robot for the Visually Impaired](https://github.com/AssistiveRoboticsUNH/course_projects_spring_2016/tree/master/Estuardo_project)
