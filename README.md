@@ -7,3 +7,4 @@ to run your projects (libraries needed, paths used etc). Skip large files (many 
 
 - [Wearable System for Fall Prevention](https://github.com/AssistiveRoboticsUNH/threespace_ros)
 - [GROVI: A Guide Robot for the Visually Impaired](https://github.com/AssistiveRoboticsUNH/course_projects_spring_2016/tree/master/Estuardo_project)
+- [Automated Intervention for Robot Assisted ASD Therapy](https://github.com/AssistiveRoboticsUNH/asd_pomdp)
